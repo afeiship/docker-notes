@@ -3,5 +3,12 @@
 
 
 ## how to build:
+```bash
 cd ~/github/fei-docker
-docker build -t fei-docker:0.1 .
+docker build -t fei-docker .
+```
+
+## how to delete:
+```bash
+docker rmi fei-docker:latest
+```
