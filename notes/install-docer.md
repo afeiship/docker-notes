@@ -1,5 +1,7 @@
 # Install 
-
+1. 微云/ 006-Software/ Mac/ docker/
+2. install 
+3. docker version
 
 ## description:
 ```conf
