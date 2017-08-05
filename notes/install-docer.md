@@ -1,5 +1,5 @@
 # Install 
-1. 微云/ 006-Software/ Mac/ docker/
+1. 微云/ 006-Software/ Mac/ docker/docker.dmg
 2. install 
 3. docker version
 
