@@ -15,4 +15,10 @@ pip install --upgrade --force-reinstall 'requests==2.6.0' urllib3
 ## checkversion
 docker --version
 docker-compose --version
+
+```
+
+## start docker
+```bash
+service docker start
 ```
