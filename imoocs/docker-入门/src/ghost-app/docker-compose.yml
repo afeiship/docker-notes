@@ -1,0 +1,30 @@
+version: "2"
+networks: ghost
+services:
+  ghost-app:
+    build: ghost
+    networks: 
+      - ghost
+    depends_on: db
+    ports: 
+      - "2368:2368"
+  nginx:
+    build: nginx
+    networks: 
+      - ghost
+    depends_on: 
+      - ghost-app
+    ports:
+      - "80:80"
+  db:
+    image: 'mysql: 5.7.75'
+    networks: 
+      - ghost
+    evironments:
+      MYSQL_ROOT_PASSWORD: mysqlroot
+      MYSQL_USRE: ghost
+      MYSQL_PASSWORD: ghost
+    volumns:
+      - $PWD/data:/var/lib/mysql
+    ports:
+      - "3306:3306"
