@@ -1,9 +1,7 @@
 # install:
 
-## docker + docker-compose
+## docker-compose
 ```bash
-## install docker
-yum install -y docker
 
 ## docker componse
 curl -L https://github.com/docker/compose/releases/download/1.20.0/docker-compose-`uname -s`-`uname -m` -o /usr/local/bin/docker-compose
@@ -13,12 +11,5 @@ chmod +x /usr/local/bin/docker-compose
 pip install --upgrade --force-reinstall 'requests==2.6.0' urllib3
 
 ## checkversion
-docker --version
 docker-compose --version
-
-```
-
-## start docker
-```bash
-service docker start
 ```
