@@ -9,6 +9,12 @@ sudo snap install docker
 
 # 2. start
 sudo snap start docker
+
+# 3. sudo docker-compose
+sudo docker-compose up -d
+
+# 4. check
+ sudo lsof -i -P -n | grep 83
 ```
 
 --- 
