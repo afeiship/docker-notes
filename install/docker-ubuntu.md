@@ -1,6 +1,17 @@
 # docker ubuntu
 
 ## installation
+
+### 2020-02-17
+```shell
+# 1. install
+sudo snap install docker
+
+# 2. start
+sudo snap start docker
+```
+
+--- 
 ~~~
 wget -qO- https://get.docker.com/ | sh
 ~~~
