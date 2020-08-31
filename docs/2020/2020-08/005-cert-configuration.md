@@ -20,8 +20,7 @@ docker container run \
 
 ## 访问
 - http://127.0.0.1:8080/
-- https://127.0.0.1:8081/
-
+- https://127.0.0.1:8081/ (这个其实在 chrome下无法访问)
 
 ## resources
 - https://www.jianshu.com/p/5f9bd492f186
