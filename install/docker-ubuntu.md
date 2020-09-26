@@ -15,6 +15,12 @@ sudo docker-compose up -d
 
 # 4. check
  sudo lsof -i -P -n | grep 83
+
+# 5. check version
+docker --version
+docker-compose --version
+# Docker version 19.03.11, build dd360c7
+# docker-compose version 1.25.5, build unknown
 ```
 
 --- 
