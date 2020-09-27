@@ -23,6 +23,11 @@ docker-compose --version
 # docker-compose version 1.25.5, build unknown
 ```
 
+## uninstallation
+```shell
+sudo snap remove docker
+```
+
 --- 
 ~~~
 wget -qO- https://get.docker.com/ | sh
