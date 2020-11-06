@@ -24,3 +24,12 @@ RUN mkdir /kellis-ng-front
 COPY . /kellis-ng-front
 WORKDIR /kellis-ng-front
 ```
+
+## LONG CMD
+> 长的命令换行处理。
+> DEPLOY_ENV/URL 来源于.env 或者 gitlab/github 等 variables 的配置。
+
+```dockerfile
+RUN echo "environment ${DEPLOY_ENV}" && \
+NODE_ENV=${DEPLOY_ENV} URL=${URL} npm run build
+```
