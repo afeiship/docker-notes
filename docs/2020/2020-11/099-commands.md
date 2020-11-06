@@ -33,3 +33,26 @@ WORKDIR /kellis-ng-front
 RUN echo "environment ${DEPLOY_ENV}" && \
 NODE_ENV=${DEPLOY_ENV} URL=${URL} npm run build
 ```
+
+## RUN/MIN
+> Dockerfile 的指令每执行一次（RUN）都会在 docker 上新建一层。所以过多无意义的层，会造成镜像膨胀过大
+
+```dockerfile
+FROM centos
+RUN yum install wget
+RUN wget -O redis.tar.gz "http://download.redis.io/releases/redis-5.0.3.tar.gz"
+RUN tar -xvf redis.tar.gz
+# 以上执行会创建 3 层镜像。可简化为以下格式：
+FROM centos
+RUN yum install wget \
+    && wget -O redis.tar.gz "http://download.redis.io/releases/redis-5.0.3.tar.gz" \
+    && tar -xvf redis.tar.gz
+```
+
+## CMD
+> 类似于 RUN 指令，用于运行程序，但二者运行的时间点不同:
+
+~~~
+CMD 在docker run 时运行。
+RUN 是在 docker build。
+~~~
