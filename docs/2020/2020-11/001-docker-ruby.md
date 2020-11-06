@@ -15,3 +15,15 @@ docker build -t ruby:v1 .
 docker build -t ruby-demo .
 docker run ruby-demo
 ```
+
+## list/rm/stop
+```shell
+# list
+docker ps -a
+
+# rm
+docker rm $(docker ps -aq)
+
+# stop
+docker stop $(docker ps -aq)
+```

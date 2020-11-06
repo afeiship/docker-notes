@@ -1,0 +1,11 @@
+{
+  "name": "ruby",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "docker build -t ruby-demo .",
+    "start": "docker run ruby-demo",
+    "list": "docker ps -a",
+    "clean": "docker rm $(docker ps -aq)"
+  },
+  "author": "afeiship"
+}
