@@ -1,3 +1,3 @@
 FROM ruby:2.6.5-alpine
-COPY entrypoint.rb .
-ENTRYPOINT ["ruby", "entrypoint.rb"]
+COPY data app
+ENTRYPOINT ["ruby", "/app/entrypoint.rb"]

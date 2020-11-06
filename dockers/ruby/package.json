@@ -4,6 +4,7 @@
   "scripts": {
     "build": "docker build -t ruby-demo .",
     "start": "docker run ruby-demo",
+    "rebuild": "npm run build && npm run start",
     "list": "docker ps -a",
     "clean": "docker rm $(docker ps -aq)"
   },
