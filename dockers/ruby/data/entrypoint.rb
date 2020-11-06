@@ -1,5 +1,8 @@
 #!/usr/bin/env ruby
 
-puts "hello ruby."
+3.times do
+  puts "hello ruby."
+end
+
 system("pwd")
 system("ls -alh")

@@ -1,9 +1,9 @@
 {
-  "name": "ruby",
+  "name": "nodejs",
   "version": "1.0.0",
   "scripts": {
-    "build": "docker build -t ruby-demo .",
-    "start": "docker run ruby-demo",
+    "build": "docker build -t nodejs-demo .",
+    "start": "docker run nodejs-demo",
     "rebuild": "npm run build && npm run start",
     "list:container": "docker ps -a",
     "list:volume": "docker volume ls",
