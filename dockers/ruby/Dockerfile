@@ -1,2 +1,3 @@
 FROM ruby:2.6.5-alpine
-CMD ruby -v
+COPY entrypoint.rb .
+ENTRYPOINT ["ruby", "entrypoint.rb"]
