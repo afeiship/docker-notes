@@ -1,4 +1,6 @@
 # commands
+- https://www.runoob.com/docker/docker-dockerfile.html
+
 
 ## COPY
 > 将目标进行 copy
@@ -56,3 +58,21 @@ RUN yum install wget \
 CMD 在docker run 时运行。
 RUN 是在 docker build。
 ~~~
+
+> CMD 与 ENTRYPOINT 搭配使用
+```dockerfile
+FROM nginx
+
+ENTRYPOINT ["nginx", "-c"] # 定参
+CMD ["/etc/nginx/nginx.conf"] # 变参 
+```
+
+## docker-compose up
+```shell
+docker-compose --verbose up
+```
+
+## docker exec
+```shell
+docker exec -it shebao-rails_web_1 /bin/bash
+```
