@@ -1,0 +1,13 @@
+{
+  "name": "awscli",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "docker build -t awscli:v1 .",
+    "start": "docker run -it --rm -v ~/.aws:/root/.aws awscli:v1 s3 ls"
+  },
+  "keywords": [],
+  "author": "afeiship",
+  "license": "ISC"
+}
