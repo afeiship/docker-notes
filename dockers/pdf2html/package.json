@@ -1,0 +1,13 @@
+{
+  "name": "pdf2html",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "docker build -t docker-pdf2html:v1 .",
+    "start": "docker run -it --rm -v `pwd`:/pdf  docker-pdf2html:v1 node ./main.js"
+  },
+  "keywords": [],
+  "author": "afeiship",
+  "license": "ISC"
+}
